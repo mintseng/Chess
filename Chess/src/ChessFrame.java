@@ -16,6 +16,7 @@ public class ChessFrame extends JFrame {
 	//methods
 	public static void main(String[] args)
 	{	
+		System.out.println("hi");
 		Chess chess = new Chess();//the game engine
 		ChessFrame game = new ChessFrame("Chess");//pass in players or ai
 		JMenuBar menuBar;
