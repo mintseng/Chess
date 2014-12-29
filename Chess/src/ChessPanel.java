@@ -76,6 +76,22 @@ public class ChessPanel extends JPanel  implements MouseListener{
 		g.drawString("F", gridSpace*6-gridSpace/4, gridSpace*9-gridSpace/2+20);
 		g.drawString("G", gridSpace*7-gridSpace/4, gridSpace*9-gridSpace/2+20);
 		g.drawString("H", gridSpace*8-gridSpace/4, gridSpace*9-gridSpace/2+20);
+		g.drawString("8", gridSpace*0+gridSpace/2-30, gridSpace*1-gridSpace/2+40);
+		g.drawString("7", gridSpace*0+gridSpace/2-30, gridSpace*2-gridSpace/2+40);
+		g.drawString("6", gridSpace*0+gridSpace/2-30, gridSpace*3-gridSpace/2+40);
+		g.drawString("5", gridSpace*0+gridSpace/2-30, gridSpace*4-gridSpace/2+40);
+		g.drawString("4", gridSpace*0+gridSpace/2-30, gridSpace*5-gridSpace/2+40);
+		g.drawString("3", gridSpace*0+gridSpace/2-30, gridSpace*6-gridSpace/2+40);
+		g.drawString("2", gridSpace*0+gridSpace/2-30, gridSpace*7-gridSpace/2+40);
+		g.drawString("1", gridSpace*0+gridSpace/2-30, gridSpace*8-gridSpace/2+40);
+		g.drawString("8", gridSpace*8+gridSpace/2+15, gridSpace*1-gridSpace/2+40);
+		g.drawString("7", gridSpace*8+gridSpace/2+15, gridSpace*2-gridSpace/2+40);
+		g.drawString("6", gridSpace*8+gridSpace/2+15, gridSpace*3-gridSpace/2+40);
+		g.drawString("5", gridSpace*8+gridSpace/2+15, gridSpace*4-gridSpace/2+40);
+		g.drawString("4", gridSpace*8+gridSpace/2+15, gridSpace*5-gridSpace/2+40);
+		g.drawString("3", gridSpace*8+gridSpace/2+15, gridSpace*6-gridSpace/2+40);
+		g.drawString("2", gridSpace*8+gridSpace/2+15, gridSpace*7-gridSpace/2+40);
+		g.drawString("1", gridSpace*8+gridSpace/2+15, gridSpace*8-gridSpace/2+40);
 	}
 	@Override
 	public void mouseClicked(MouseEvent e) {
