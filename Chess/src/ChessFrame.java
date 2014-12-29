@@ -1,4 +1,7 @@
 import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 
 public class ChessFrame extends JFrame {
@@ -17,9 +20,21 @@ public class ChessFrame extends JFrame {
 		System.out.println("starting the main");
 		
 		ChessFrame game = new ChessFrame("Chess");//pass in players or ai
+		System.out.println("created");
+		JMenuBar menuBar;
+		menuBar = new JMenuBar();
+		JMenu menuOne = new JMenu("First Item");
+		JMenuItem newGame = new JMenuItem("New Game");
+		menuOne.add(newGame);
+		menuBar.add(menuOne);
+		game.setJMenuBar(menuBar);
+		
+		game.setSize(700, 700);
+		game.setResizable(false);
 		game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		game.setVisible(true);
-		System.out.println("created");
+		
+		
 	}
 	boolean canMove()
 	{
