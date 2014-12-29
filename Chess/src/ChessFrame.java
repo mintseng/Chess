@@ -15,11 +15,8 @@ public class ChessFrame extends JFrame {
 	
 	//methods
 	public static void main(String[] args)
-	{
-		System.out.println("starting the main");
-		
+	{	
 		ChessFrame game = new ChessFrame("Chess");//pass in players or ai
-		System.out.println("created");
 		JMenuBar menuBar;
 		menuBar = new JMenuBar();
 		JMenu menuOne = new JMenu("First Item");
