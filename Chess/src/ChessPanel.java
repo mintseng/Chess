@@ -35,7 +35,7 @@ public class ChessPanel extends JPanel  implements MouseListener{
 		}
 		catch(IOException ex)
 		{
-			
+			System.out.println("Image has been caught");
 		}
 		gridSpace = width/9;
 		Graphics2D g2 = (Graphics2D) g;
