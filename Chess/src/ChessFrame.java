@@ -7,7 +7,6 @@ import javax.swing.JMenuItem;
 public class ChessFrame extends JFrame {
 	//fields
 	
-	
 	//constructors
 	public ChessFrame(String name)
 	{
@@ -29,10 +28,13 @@ public class ChessFrame extends JFrame {
 		menuBar.add(menuOne);
 		game.setJMenuBar(menuBar);
 		
-		game.setSize(700, 700);
+		game.setSize(704, 704+44);
 		game.setResizable(false);
 		game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		game.setVisible(true);
+		ChessPanel panel = new ChessPanel();
+		game.add(panel);
+	    game.setVisible(true);
+		
 		
 		
 	}
