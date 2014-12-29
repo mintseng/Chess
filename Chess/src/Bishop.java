@@ -1,5 +1,9 @@
 
 public class Bishop implements Piece{
+	public String toString()
+	{
+		return "";
+	}
 	public boolean canMove()
 	{
 		return true;

@@ -12,4 +12,8 @@ public class Queen implements Piece{
 	{
 		return 1;
 	}
+	public String toString()
+	{
+		return "";
+	}
 }

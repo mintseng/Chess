@@ -12,4 +12,8 @@ public class Knight implements Piece{
 	{
 		return 1;
 	}
+	public String toString()
+	{
+		return "J";
+	}
 }

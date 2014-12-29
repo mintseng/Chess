@@ -1,15 +1,21 @@
 
 public class Board {
-	boolean canMove()
+	//fields
+	Piece[][] board;
+	
+	//constructor
+	
+	//methods
+	public String toString()
 	{
-		return true;
-	}
-	int getPositionX()
-	{
-		return 1;
-	}
-	int getPositionY()
-	{
-		return 1;
+		for (int i = 0; i < 8; i++)
+		{
+			for(int j = 0; j < 8; j++)
+			{
+				System.out.print(board[i][j].toString() + " ");
+			}
+			System.out.println("");
+		}
+		return "";
 	}
 }

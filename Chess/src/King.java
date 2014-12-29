@@ -12,4 +12,8 @@ public class King implements Piece{
 	{
 		return 1;
 	}
+	public String toString()
+	{
+		return "";
+	}
 }
