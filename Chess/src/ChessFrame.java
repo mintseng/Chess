@@ -28,7 +28,7 @@ public class ChessFrame extends JFrame {
 		menuBar.add(menuOne);
 		game.setJMenuBar(menuBar);
 		
-		game.setSize(704, 704+44);
+		game.setSize(702, 702+44);
 		game.setResizable(false);
 		game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ChessPanel panel = new ChessPanel();
