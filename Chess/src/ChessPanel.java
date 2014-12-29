@@ -67,6 +67,15 @@ public class ChessPanel extends JPanel  implements MouseListener{
 		g.drawImage(blackRook, gridSpace*1-gridSpace/2, gridSpace*5-gridSpace/2, gridSpace, gridSpace, null);
 		//testing numbers and letters:
 		g.setColor(Color.BLACK);
+
+		g.drawString("A", gridSpace*1-gridSpace/4,  gridSpace-2*gridSpace/2+20);
+		g.drawString("B", gridSpace*2-gridSpace/4, gridSpace-2*gridSpace/2+20);
+		g.drawString("C", gridSpace*3-gridSpace/4, gridSpace-2*gridSpace/2+20);
+		g.drawString("D", gridSpace*4-gridSpace/4, gridSpace-2*gridSpace/2+20);
+		g.drawString("E", gridSpace*5-gridSpace/4, gridSpace-2*gridSpace/2+20);
+		g.drawString("F", gridSpace*6-gridSpace/4, gridSpace-2*gridSpace/2+20);
+		g.drawString("G", gridSpace*7-gridSpace/4, gridSpace-2*gridSpace/2+20);
+		g.drawString("H", gridSpace*8-gridSpace/4, gridSpace-2*gridSpace/2+20);
 		
 		g.drawString("A", gridSpace*1-gridSpace/4,  gridSpace*9-gridSpace/2+20);
 		g.drawString("B", gridSpace*2-gridSpace/4, gridSpace*9-gridSpace/2+20);
