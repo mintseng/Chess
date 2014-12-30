@@ -1,19 +1,8 @@
 
-public class King implements Piece{
-	public boolean canMove()
+public class King extends Piece
+{
+	public King(int x, int y, String image)
 	{
-		return true;
-	}
-	public int getPositionX()
-	{
-		return 1;
-	}
-	public int getPositionY()
-	{
-		return 1;
-	}
-	public String toString()
-	{
-		return "";
+		super(x,y,image);
 	}
 }

@@ -1,19 +1,9 @@
 
-public class Rook implements Piece{
-	public boolean canMove()
+public class Rook extends Piece
+{
+	public Rook(int x, int y, String image)
 	{
-		return true;
-	}
-	public int getPositionX()
-	{
-		return 1;
-	}
-	public int getPositionY()
-	{
-		return 1;
-	}
-	public String toString()
-	{
-		return "";
-	}
+		super(x,y,image);
+	}	
+
 }

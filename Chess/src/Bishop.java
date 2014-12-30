@@ -1,19 +1,9 @@
 
-public class Bishop implements Piece{
-	public String toString()
+public class Bishop extends Piece
+{
+
+	public Bishop(int x, int y, String image)
 	{
-		return "";
-	}
-	public boolean canMove()
-	{
-		return true;
-	}
-	public int getPositionX()
-	{
-		return 1;
-	}
-	public int getPositionY()
-	{
-		return 1;
+		super(x,y,image);
 	}
 }

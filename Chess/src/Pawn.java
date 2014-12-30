@@ -1,19 +1,8 @@
 
-public class Pawn implements Piece{
-	public boolean canMove()
+public class Pawn extends Piece
+{
+	public Pawn(int x, int y, String image)
 	{
-		return true;
-	}
-	public int getPositionX()
-	{
-		return 1;
-	}
-	public int getPositionY()
-	{
-		return 1;
-	}
-	public String toString()
-	{
-		return "";
+		super(x,y,image);
 	}
 }

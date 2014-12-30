@@ -1,19 +1,11 @@
 
-public class Queen implements Piece{
-	public boolean canMove()
+public class Queen extends Piece
+{
+
+	public Queen(int x, int y, String image)
 	{
-		return true;
+		super(x,y,image);
 	}
-	public int getPositionX()
-	{
-		return 1;
-	}
-	public int getPositionY()
-	{
-		return 1;
-	}
-	public String toString()
-	{
-		return "";
-	}
+
+
 }

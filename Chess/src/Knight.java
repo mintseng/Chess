@@ -1,19 +1,8 @@
 
-public class Knight implements Piece{
-	public boolean canMove()
+public class Knight extends Piece
+{
+	public Knight(int x, int y, String image)
 	{
-		return true;
-	}
-	public int getPositionX()
-	{
-		return 1;
-	}
-	public int getPositionY()
-	{
-		return 1;
-	}
-	public String toString()
-	{
-		return "J";
+		super(x,y,image);
 	}
 }
