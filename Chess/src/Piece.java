@@ -1,7 +1,8 @@
 
 public class Piece
 {
-	private int dog;
+<<<<<<< HEAD
+	private int x;
 	private int y;
 	private String image;
 
