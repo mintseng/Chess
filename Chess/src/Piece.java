@@ -1,7 +1,7 @@
 
 public class Piece extends BufferedImage
 {
-	private int x;
+	private int cat;
 	private int y;
 	private String image;
 
