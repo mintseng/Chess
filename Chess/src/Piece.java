@@ -1,10 +1,10 @@
 
-public class Piece 
+public class Piece extends BufferedImage
 {
 	private int x;
 	private int y;
 	private String image;
-	
+
 	public Piece(int x, int y, String image)
 	{
 		self.x = x;
