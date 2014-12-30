@@ -58,6 +58,14 @@ public class ChessPanel extends JPanel implements MouseListener{
 			blackRook2 = ImageIO.read(new File("blackRook.png"));
 
 			whiteRook1 = ImageIO.read(new File("whiteRook.png"));
+			whiteHorse1 = ImageIO.read(new File("whiteHorse.png"));
+			whiteBishop1 = ImageIO.read(new File("whiteBishop.png"));
+			whiteQueen = ImageIO.read(new File("whiteQueen.png"));
+			whiteKing = ImageIO.read(new File("whiteKing.png"));
+			whiteBishop2 = ImageIO.read(new File("whiteBishop.png"));
+			whiteHorse2 = ImageIO.read(new File("whiteHorse.png"));
+			whiteRook2 = ImageIO.read(new File("whiteRook.png"));
+
 		}
 		catch(IOException ex)
 		{
