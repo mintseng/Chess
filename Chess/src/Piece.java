@@ -1,7 +1,6 @@
 
 public class Piece
 {
-<<<<<<< HEAD
 	private int x;
 	private int y;
 	private String image;
