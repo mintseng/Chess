@@ -26,6 +26,15 @@ public class ChessPanel extends JPanel implements MouseListener{
 	BufferedImage blackHorse2 = null;
 	BufferedImage blackRook2 = null;
 
+	BufferedImage blackPawn1 = null;
+	BufferedImage blackPawn2 = null;
+	BufferedImage blackPawn3 = null;
+	BufferedImage blackPawn4 = null;
+	BufferedImage blackPawn5 = null;
+	BufferedImage blackPawn6 = null;
+	BufferedImage blackPawn7 = null;
+	BufferedImage blackPawn8 = null;
+
 	BufferedImage whiteRook1 = null;
 	BufferedImage whiteHorse1 = null;
 	BufferedImage whiteBishop1 = null;
@@ -34,6 +43,15 @@ public class ChessPanel extends JPanel implements MouseListener{
 	BufferedImage whiteBishop2 = null;
 	BufferedImage whiteHorse2 = null;
 	BufferedImage whiteRook2 = null;
+
+	BufferedImage whitePawn1 = null;
+	BufferedImage whitePawn2 = null;
+	BufferedImage whitePawn3 = null;
+	BufferedImage whitePawn4 = null;
+	BufferedImage whitePawn5 = null;
+	BufferedImage whitePawn6 = null;
+	BufferedImage whitePawn7 = null;
+	BufferedImage whitePawn8 = null;
 
 	public ChessPanel()
 	{
@@ -57,6 +75,15 @@ public class ChessPanel extends JPanel implements MouseListener{
 			blackHorse2 = ImageIO.read(new File("blackHorse.png"));
 			blackRook2 = ImageIO.read(new File("blackRook.png"));
 
+			blackPawn1 = ImageIO.read(new File("blackPawn.png"));
+			blackPawn2 = ImageIO.read(new File("blackPawn.png"));
+			blackPawn3 = ImageIO.read(new File("blackPawn.png"));
+			blackPawn4 = ImageIO.read(new File("blackPawn.png"));
+			blackPawn5 = ImageIO.read(new File("blackPawn.png"));
+			blackPawn6 = ImageIO.read(new File("blackPawn.png"));
+			blackPawn7 = ImageIO.read(new File("blackPawn.png"));
+			blackPawn8 = ImageIO.read(new File("blackPawn.png"));
+
 			whiteRook1 = ImageIO.read(new File("whiteRook.png"));
 			whiteHorse1 = ImageIO.read(new File("whiteHorse.png"));
 			whiteBishop1 = ImageIO.read(new File("whiteBishop.png"));
@@ -65,6 +92,15 @@ public class ChessPanel extends JPanel implements MouseListener{
 			whiteBishop2 = ImageIO.read(new File("whiteBishop.png"));
 			whiteHorse2 = ImageIO.read(new File("whiteHorse.png"));
 			whiteRook2 = ImageIO.read(new File("whiteRook.png"));
+
+			whitePawn1 = ImageIO.read(new File("whitePawn.png"));
+			whitePawn2 = ImageIO.read(new File("whitePawn.png"));
+			whitePawn3 = ImageIO.read(new File("whitePawn.png"));
+			whitePawn4 = ImageIO.read(new File("whitePawn.png"));
+			whitePawn5 = ImageIO.read(new File("whitePawn.png"));
+			whitePawn6 = ImageIO.read(new File("whitePawn.png"));
+			whitePawn7 = ImageIO.read(new File("whitePawn.png"));
+			whitePawn8 = ImageIO.read(new File("whitePawn.png"));
 
 		}
 		catch(IOException ex)
@@ -105,6 +141,14 @@ public class ChessPanel extends JPanel implements MouseListener{
 		g.drawImage(blackHorse2, gridSpace*7-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
 		g.drawImage(blackRook2, gridSpace*8-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
 
+		g.drawImage(blackPawn1, gridSpace*1-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackPawn2, gridSpace*2-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackPawn3, gridSpace*3-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackPawn4, gridSpace*4-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackPawn5, gridSpace*5-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackPawn6, gridSpace*6-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackPawn7, gridSpace*7-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackPawn8, gridSpace*8-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
 		//this image is at 1, 5
 		g.drawImage(whiteRook1, gridSpace*1-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
 		g.drawImage(whiteHorse1, gridSpace*2-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
@@ -114,6 +158,16 @@ public class ChessPanel extends JPanel implements MouseListener{
 		g.drawImage(whiteBishop2, gridSpace*6-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
 		g.drawImage(whiteHorse2, gridSpace*7-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
 		g.drawImage(whiteRook2, gridSpace*8-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+
+		g.drawImage(whitePawn1, gridSpace*1-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whitePawn2, gridSpace*2-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whitePawn3, gridSpace*3-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whitePawn4, gridSpace*4-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whitePawn5, gridSpace*5-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whitePawn6, gridSpace*6-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whitePawn7, gridSpace*7-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whitePawn8, gridSpace*8-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+
 		//testing numbers and letters:
 		g.setColor(Color.BLACK);
 
