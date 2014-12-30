@@ -1,5 +1,5 @@
 
-public class EmptyPiece implements Piece{
+public class EmptyPiece extends Piece{
 	public boolean canMove()
 	{
 		return true;
