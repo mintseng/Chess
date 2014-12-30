@@ -13,11 +13,28 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
 
-public class ChessPanel extends JPanel  implements MouseListener{
+public class ChessPanel extends JPanel implements MouseListener{
 	int width = 702;
 	int height = 702+44;
 	int gridSpace;
-	BufferedImage blackRook = null;
+	BufferedImage blackRook1 = null;
+	BufferedImage blackHorse1 = null;
+	BufferedImage blackBishop1 = null;
+	BufferedImage blackQueen = null;
+	BufferedImage blackKing = null;
+	BufferedImage blackBishop2 = null;
+	BufferedImage blackHorse2 = null;
+	BufferedImage blackRook2 = null;
+
+	BufferedImage whiteRook1 = null;
+	BufferedImage whiteHorse1 = null;
+	BufferedImage whiteBishop1 = null;
+	BufferedImage whiteQueen = null;
+	BufferedImage whiteKing = null;
+	BufferedImage whiteBishop2 = null;
+	BufferedImage whiteHorse2 = null;
+	BufferedImage whiteRook2 = null;
+
 	public ChessPanel()
 	{
 		super();
@@ -31,7 +48,16 @@ public class ChessPanel extends JPanel  implements MouseListener{
         //   to paint the background
 		try
 		{
-			blackRook = ImageIO.read(new File("chess_piece_black_rook.png"));
+			blackRook1 = ImageIO.read(new File("blackRook.png"));
+			blackHorse1 = ImageIO.read(new File("blackHorse.png"));
+			blackBishop1 = ImageIO.read(new File("blackBishop.png"));
+			blackQueen = ImageIO.read(new File("blackQueen.png"));
+			blackKing = ImageIO.read(new File("blackKing.png"));
+			blackBishop2 = ImageIO.read(new File("blackBishop.png"));
+			blackHorse2 = ImageIO.read(new File("blackHorse.png"));
+			blackRook2 = ImageIO.read(new File("blackRook.png"));
+
+			whiteRook1 = ImageIO.read(new File("whiteRook.png"));
 		}
 		catch(IOException ex)
 		{
@@ -62,9 +88,24 @@ public class ChessPanel extends JPanel  implements MouseListener{
 		//this image is at 3, 3
 		//g.drawImage(blackRook, gridSpace*3-gridSpace/2, gridSpace*3-gridSpace/2, gridSpace, gridSpace, null);
 		//this image is at 2, 3
-		g.drawImage(blackRook, gridSpace*2-gridSpace/2, gridSpace*3-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackRook1, gridSpace*1-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackHorse1, gridSpace*2-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackBishop1, gridSpace*3-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackQueen, gridSpace*4-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackKing, gridSpace*5-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackBishop2, gridSpace*6-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackHorse2, gridSpace*7-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(blackRook2, gridSpace*8-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+
 		//this image is at 1, 5
-		g.drawImage(blackRook, gridSpace*1-gridSpace/2, gridSpace*5-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whiteRook1, gridSpace*1-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whiteHorse1, gridSpace*2-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whiteBishop1, gridSpace*3-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whiteQueen, gridSpace*4-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whiteKing, gridSpace*5-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whiteBishop2, gridSpace*6-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whiteHorse2, gridSpace*7-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		g.drawImage(whiteRook2, gridSpace*8-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
 		//testing numbers and letters:
 		g.setColor(Color.BLACK);
 
