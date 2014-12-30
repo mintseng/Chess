@@ -7,13 +7,13 @@ public class Piece extends BufferedImage
 
 	public Piece(int x, int y, String image)
 	{
-		self.x = x;
-		self.y = y;
-		self.image = image;
+		this.x = x;
+		this.y = y;
+		this.image = image;
 	}
 	boolean canMove()
 	{
-		return False;
+		return false;
 	}
 	int getPositionX()
 	{
