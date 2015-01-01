@@ -1,8 +1,10 @@
+import java.awt.image.BufferedImage;
+
 
 public class Queen extends Piece
 {
 
-	public Queen(String image)
+	public Queen(BufferedImage image)
 	{
 		super(image);
 	}
@@ -13,11 +15,7 @@ public class Queen extends Piece
 		return false;
 	}
 
-	@Override
-	public String getImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 
 
 }

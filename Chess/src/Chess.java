@@ -1,9 +1,47 @@
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 
 public class Chess{
-	Piece[][] board;
+	//fields
+	private BufferedImage blackRook;
+	private BufferedImage blackKnight;
+	private BufferedImage blackBishop;
+	private BufferedImage blackQueen;
+	private BufferedImage blackKing;
+	private BufferedImage blackPawn;
+	private BufferedImage whiteRook;
+	private BufferedImage whiteKnight;
+	private BufferedImage whiteBishop;
+	private BufferedImage whiteQueen;
+	private BufferedImage whiteKing;
+	private BufferedImage whitePawn;
+	private Piece[][] board;
+	public Chess()
+	{
+		try {
+			blackRook = ImageIO.read(new File("blackRook.png"));
+			blackKnight = ImageIO.read(new File("blackKnight.png"));
+			blackBishop = ImageIO.read(new File("blackBishop.png"));
+			blackQueen = ImageIO.read(new File("blackQueen.png"));
+			blackKing = ImageIO.read(new File("blackKing.png"));
+			blackPawn = ImageIO.read(new File("blackPawn.png"));
+			whiteRook = ImageIO.read(new File("whiteRook.png"));
+			whiteKnight = ImageIO.read(new File("whiteKnight.png"));
+			whiteBishop = ImageIO.read(new File("whiteBishop.png"));
+			whiteQueen = ImageIO.read(new File("whiteQueen.png"));
+			whiteKing = ImageIO.read(new File("whiteKing.png"));
+			whitePawn = ImageIO.read(new File("whitePawn.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	//methods
 	public void reset()//set up the board
 	{
@@ -18,8 +56,9 @@ public class Chess{
 	
 	//set up pieces.
 	//black side
-	board[1][1] = new Rook("blackRook.png");
-	board[2][1] = new Knight("blackKnight.png");
+	
+	board[1][1] = new Rook(blackRook);
+	board[2][1] = new Knight(blackKnight);
 	
 	//white side
 	

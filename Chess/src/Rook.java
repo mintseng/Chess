@@ -1,7 +1,9 @@
+import java.awt.image.BufferedImage;
+
 
 public class Rook extends Piece
 {
-	public Rook(String image)
+	public Rook(BufferedImage image)
 	{
 		super(image);
 	}
@@ -12,10 +14,5 @@ public class Rook extends Piece
 		return false;
 	}
 
-	@Override
-	public String getImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}	
 
 }

@@ -1,21 +1,20 @@
+import java.awt.image.BufferedImage;
+
 
 public class Pawn extends Piece
 {
 	
-	public Pawn(String image)
+	public Pawn(BufferedImage image)
 	{
 		super(image);
 	}
 
 	@Override
-	boolean canMove() {//pass in a grid here? 
+	boolean canMove() {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
-	public String getImage() {
-		// TODO Auto-generated method stub
-		return image;
-	}
+
+	
 }

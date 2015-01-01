@@ -1,7 +1,9 @@
+import java.awt.image.BufferedImage;
+
 
 public class Knight extends Piece
 {
-	public Knight(String image)
+	public Knight(BufferedImage image)
 	{
 		super(image);
 	}
@@ -12,9 +14,6 @@ public class Knight extends Piece
 		return false;
 	}
 
-	@Override
-	public String getImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
+	
 }

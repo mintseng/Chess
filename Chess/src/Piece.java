@@ -1,14 +1,19 @@
+import java.awt.image.BufferedImage;
+
 
 public abstract class Piece
 {
-	protected String image;
+	protected BufferedImage image;
 
-	public Piece(String image)
+	public Piece(BufferedImage image)
 	{
 		this.image = image;
 	}
 	abstract boolean canMove();
-	public abstract String getImage();
+	public final BufferedImage getImage()
+	{
+		return image;
+	}
 	
 	
 	

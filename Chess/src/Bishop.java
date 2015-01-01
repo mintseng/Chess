@@ -1,8 +1,10 @@
+import java.awt.image.BufferedImage;
+
 
 public class Bishop extends Piece
 {
 
-	public Bishop(String image)
+	public Bishop(BufferedImage image)
 	{
 		super(image);
 	}
@@ -13,9 +15,4 @@ public class Bishop extends Piece
 		return false;
 	}
 
-	@Override
-	public String getImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

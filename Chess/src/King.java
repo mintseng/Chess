@@ -1,7 +1,9 @@
+import java.awt.image.BufferedImage;
+
 
 public class King extends Piece
 {
-	public King(String image)
+	public King(BufferedImage image)
 	{
 		super(image);
 	}
@@ -12,9 +14,6 @@ public class King extends Piece
 		return false;
 	}
 
-	@Override
-	public String getImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
+	
 }
