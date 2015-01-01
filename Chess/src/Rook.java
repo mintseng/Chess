@@ -1,9 +1,9 @@
 
 public class Rook extends Piece
 {
-	public Rook(int x, int y, String image)
+	public Rook(String image)
 	{
-		super(x,y,image);
+		super(image);
 	}
 
 	@Override

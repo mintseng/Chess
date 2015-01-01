@@ -67,12 +67,12 @@ public class ChessPanel extends JPanel implements MouseListener{
 		try
 		{
 			blackRook1 = ImageIO.read(new File("blackRook.png"));
-			blackHorse1 = ImageIO.read(new File("blackHorse.png"));
+			blackHorse1 = ImageIO.read(new File("blackKnight.png"));
 			blackBishop1 = ImageIO.read(new File("blackBishop.png"));
 			blackQueen = ImageIO.read(new File("blackQueen.png"));
 			blackKing = ImageIO.read(new File("blackKing.png"));
 			blackBishop2 = ImageIO.read(new File("blackBishop.png"));
-			blackHorse2 = ImageIO.read(new File("blackHorse.png"));
+			blackHorse2 = ImageIO.read(new File("blackKnight.png"));
 			blackRook2 = ImageIO.read(new File("blackRook.png"));
 
 			blackPawn1 = ImageIO.read(new File("blackPawn.png"));
@@ -85,12 +85,12 @@ public class ChessPanel extends JPanel implements MouseListener{
 			blackPawn8 = ImageIO.read(new File("blackPawn.png"));
 
 			whiteRook1 = ImageIO.read(new File("whiteRook.png"));
-			whiteHorse1 = ImageIO.read(new File("whiteHorse.png"));
+			whiteHorse1 = ImageIO.read(new File("whiteKnight.png"));
 			whiteBishop1 = ImageIO.read(new File("whiteBishop.png"));
 			whiteQueen = ImageIO.read(new File("whiteQueen.png"));
 			whiteKing = ImageIO.read(new File("whiteKing.png"));
 			whiteBishop2 = ImageIO.read(new File("whiteBishop.png"));
-			whiteHorse2 = ImageIO.read(new File("whiteHorse.png"));
+			whiteHorse2 = ImageIO.read(new File("whiteKnight.png"));
 			whiteRook2 = ImageIO.read(new File("whiteRook.png"));
 
 			whitePawn1 = ImageIO.read(new File("whitePawn.png"));

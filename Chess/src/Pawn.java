@@ -1,13 +1,14 @@
 
 public class Pawn extends Piece
 {
-	public Pawn(int x, int y, String image)
+	
+	public Pawn(String image)
 	{
-		super(x,y,image);
+		super(image);
 	}
 
 	@Override
-	boolean canMove() {
+	boolean canMove() {//pass in a grid here? 
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -15,6 +16,6 @@ public class Pawn extends Piece
 	@Override
 	public String getImage() {
 		// TODO Auto-generated method stub
-		return null;
+		return image;
 	}
 }

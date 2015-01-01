@@ -1,9 +1,9 @@
 
 public class Knight extends Piece
 {
-	public Knight(int x, int y, String image)
+	public Knight(String image)
 	{
-		super(x,y,image);
+		super(image);
 	}
 
 	@Override

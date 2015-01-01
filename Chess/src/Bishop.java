@@ -2,9 +2,9 @@
 public class Bishop extends Piece
 {
 
-	public Bishop(int x, int y, String image)
+	public Bishop(String image)
 	{
-		super(x,y,image);
+		super(image);
 	}
 
 	@Override
