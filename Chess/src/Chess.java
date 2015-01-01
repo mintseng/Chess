@@ -12,9 +12,10 @@ public class Chess{
 			for (int j = 0; j < 8; j++)
 			{
 				//board[i][j] = new EmptyPiece();
-				
+				board[i][j] = null;
 			}
 		}
 	}
+	//set up pieces.
 	
 }

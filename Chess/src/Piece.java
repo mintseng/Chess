@@ -1,9 +1,9 @@
 
-public class Piece
+public abstract class Piece
 {
-	private int x;
-	private int y;
-	private String image;
+	protected int x;
+	protected int y;
+	protected String image;
 
 	public Piece(int x, int y, String image)
 	{
@@ -11,25 +11,9 @@ public class Piece
 		this.y = y;
 		this.image = image;
 	}
-	boolean canMove()
-	{
-		return false;
-	}
-	int getPositionX()
-	{
-		return x;
-	}
-	int getPositionY()
-	{
-		return y;
-	}
-	String getImage()
-	{
-		return image;
-	}
-	String toString()
-	{
-		return "";
-	}
+	abstract boolean canMove();
+	public abstract String getImage();
+	
+	
 	
 }

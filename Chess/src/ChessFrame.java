@@ -22,7 +22,7 @@ public class ChessFrame extends JFrame {
 		menuBar = new JMenuBar();
 		JMenu menuOne = new JMenu("First Item");
 		JMenuItem newGame = new JMenuItem("New Game");
-		chess.reset();
+		//chess.reset();
 		menuOne.add(newGame);
 		menuBar.add(menuOne);
 		game.setJMenuBar(menuBar);
