@@ -8,6 +8,8 @@ import javax.imageio.ImageIO;
 
 
 public class Chess{
+	private final int BLACK = 1;
+	private final int WHITE = 0;
 	//fields
 	private BufferedImage blackRook;
 	private BufferedImage blackKnight;
@@ -56,10 +58,17 @@ public class Chess{
 	
 	//set up pieces.
 	//black side
-	
-	board[1][1] = new Rook(blackRook);
-	board[2][1] = new Knight(blackKnight);
-	
+	final PieceFactory factory = PieceFactory.getFactory();
+	try {
+		board[1][1] = factory.buildPiece(PieceFactory.PieceType.ROOK, BLACK); //must try/catch because if pic doesnt work.
+		board[2][1] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, BLACK);
+		board[3][1] = factory.buildPiece(PieceFactory.PieceType.BISHOP, BLACK);
+		board[4][1] = factory.buildPiece(PieceFactory.PieceType.QUEEN, BLACK);
+		
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	//white side
 	
 	// 8 (1,1), (2,1), (3,1), (4,1), (5,1), (6,1), (7,1), (8,1) 
