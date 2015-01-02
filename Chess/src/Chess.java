@@ -56,29 +56,61 @@ public class Chess{
 			}
 		}
 	
-	//set up pieces.
-	//black side
-	final PieceFactory factory = PieceFactory.getFactory();
-	try {
-		board[1][1] = factory.buildPiece(PieceFactory.PieceType.ROOK, BLACK); //must try/catch because if pic doesnt work.
-		board[2][1] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, BLACK);
-		board[3][1] = factory.buildPiece(PieceFactory.PieceType.BISHOP, BLACK);
-		board[4][1] = factory.buildPiece(PieceFactory.PieceType.QUEEN, BLACK);
+		//set up pieces.
+		//black side
+		final PieceFactory factory = PieceFactory.getFactory();
+		try {
+			board[1][1] = factory.buildPiece(PieceFactory.PieceType.ROOK, BLACK); //must try/catch because if pic doesnt work.
+			board[2][1] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, BLACK);
+			board[3][1] = factory.buildPiece(PieceFactory.PieceType.BISHOP, BLACK);
+			board[4][1] = factory.buildPiece(PieceFactory.PieceType.QUEEN, BLACK);
+			board[5][1] = factory.buildPiece(PieceFactory.PieceType.KING, BLACK);
+			board[6][1] = factory.buildPiece(PieceFactory.PieceType.BISHOP, BLACK);
+			board[7][1] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, BLACK);
+			board[8][1] = factory.buildPiece(PieceFactory.PieceType.ROOK, BLACK);
+
+			board[1][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK); //must try/catch because if pic doesnt work.
+			board[2][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[3][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[4][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[5][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[6][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[7][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[8][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+
+			board[1][8] = factory.buildPiece(PieceFactory.PieceType.ROOK, WHITE); //must try/catch because if pic doesnt work.
+			board[2][8] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, WHITE);
+			board[3][8] = factory.buildPiece(PieceFactory.PieceType.BISHOP, WHITE);
+			board[4][8] = factory.buildPiece(PieceFactory.PieceType.QUEEN, WHITE);
+			board[5][8] = factory.buildPiece(PieceFactory.PieceType.KING, WHITE);
+			board[6][8] = factory.buildPiece(PieceFactory.PieceType.BISHOP, WHITE);
+			board[7][8] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, WHITE);
+			board[8][8] = factory.buildPiece(PieceFactory.PieceType.ROOK, WHITE);
+
+			board[1][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE); //must try/catch because if pic doesnt work.
+			board[2][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[3][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[4][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[5][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[6][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[7][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[8][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//white side
 		
-	} catch (Exception e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	//white side
-	
-	// 8 (1,1), (2,1), (3,1), (4,1), (5,1), (6,1), (7,1), (8,1) 
-	// 7 (1,2), (2,2), (3,2), (4,2), (5,2), (6,2), (7,2), (8,2)
-	// 6 (1,3), (2,3), (3,3), (4,3), (5,3), (6,3), (7,3), (8,3)
-	// 5 (1,4), (2,4), (3,4), (4,4), (5,4), (6,4), (7,4), (8,4)
-	// 4 (1,5), (2,5), (3,5), (4,5), (5,5), (6,5), (7,5), (8,5)
-	// 3 (1,6), (2,6), (3,6), (4,6), (5,6), (6,6), (7,6), (8,6)
-	// 2 (1,7), (2,7), (3,7), (4,7), (5,7), (6,7), (7,7), (8,7)
-	// 1 (1,8), (2,8), (3,8), (4,8), (5,8), (6,8), (7,8), (8,8)
-	//     A      B      C      D      E      F      G      H 
+		// 8 (1,1), (2,1), (3,1), (4,1), (5,1), (6,1), (7,1), (8,1) 
+		// 7 (1,2), (2,2), (3,2), (4,2), (5,2), (6,2), (7,2), (8,2)
+		// 6 (1,3), (2,3), (3,3), (4,3), (5,3), (6,3), (7,3), (8,3)
+		// 5 (1,4), (2,4), (3,4), (4,4), (5,4), (6,4), (7,4), (8,4)
+		// 4 (1,5), (2,5), (3,5), (4,5), (5,5), (6,5), (7,5), (8,5)
+		// 3 (1,6), (2,6), (3,6), (4,6), (5,6), (6,6), (7,6), (8,6)
+		// 2 (1,7), (2,7), (3,7), (4,7), (5,7), (6,7), (7,7), (8,7)
+		// 1 (1,8), (2,8), (3,8), (4,8), (5,8), (6,8), (7,8), (8,8)
+		//     A      B      C      D      E      F      G      H 
 	}
 }

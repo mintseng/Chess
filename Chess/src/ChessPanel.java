@@ -132,41 +132,41 @@ public class ChessPanel extends JPanel implements MouseListener{
 		//this image is at 3, 3
 		//g.drawImage(blackRook, gridSpace*3-gridSpace/2, gridSpace*3-gridSpace/2, gridSpace, gridSpace, null);
 		//this image is at 2, 3
-		g.drawImage(blackRook1, gridSpace*1-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackHorse1, gridSpace*2-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackBishop1, gridSpace*3-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackQueen, gridSpace*4-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackKing, gridSpace*5-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackBishop2, gridSpace*6-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackHorse2, gridSpace*7-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackRook2, gridSpace*8-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackRook1, gridSpace*1-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackHorse1, gridSpace*2-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackBishop1, gridSpace*3-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackQueen, gridSpace*4-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackKing, gridSpace*5-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackBishop2, gridSpace*6-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackHorse2, gridSpace*7-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackRook2, gridSpace*8-gridSpace/2, gridSpace*1-gridSpace/2, gridSpace, gridSpace, null);
 
-		g.drawImage(blackPawn1, gridSpace*1-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackPawn2, gridSpace*2-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackPawn3, gridSpace*3-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackPawn4, gridSpace*4-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackPawn5, gridSpace*5-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackPawn6, gridSpace*6-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackPawn7, gridSpace*7-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(blackPawn8, gridSpace*8-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
-		//this image is at 1, 5
-		g.drawImage(whiteRook1, gridSpace*1-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whiteHorse1, gridSpace*2-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whiteBishop1, gridSpace*3-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whiteQueen, gridSpace*4-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whiteKing, gridSpace*5-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whiteBishop2, gridSpace*6-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whiteHorse2, gridSpace*7-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whiteRook2, gridSpace*8-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackPawn1, gridSpace*1-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackPawn2, gridSpace*2-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackPawn3, gridSpace*3-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackPawn4, gridSpace*4-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackPawn5, gridSpace*5-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackPawn6, gridSpace*6-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackPawn7, gridSpace*7-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(blackPawn8, gridSpace*8-gridSpace/2, gridSpace*2-gridSpace/2, gridSpace, gridSpace, null);
+		// //this image is at 1, 5
+		// g.drawImage(whiteRook1, gridSpace*1-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whiteHorse1, gridSpace*2-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whiteBishop1, gridSpace*3-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whiteQueen, gridSpace*4-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whiteKing, gridSpace*5-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whiteBishop2, gridSpace*6-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whiteHorse2, gridSpace*7-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whiteRook2, gridSpace*8-gridSpace/2, gridSpace*8-gridSpace/2, gridSpace, gridSpace, null);
 
-		g.drawImage(whitePawn1, gridSpace*1-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whitePawn2, gridSpace*2-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whitePawn3, gridSpace*3-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whitePawn4, gridSpace*4-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whitePawn5, gridSpace*5-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whitePawn6, gridSpace*6-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whitePawn7, gridSpace*7-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
-		g.drawImage(whitePawn8, gridSpace*8-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whitePawn1, gridSpace*1-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whitePawn2, gridSpace*2-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whitePawn3, gridSpace*3-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whitePawn4, gridSpace*4-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whitePawn5, gridSpace*5-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whitePawn6, gridSpace*6-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whitePawn7, gridSpace*7-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
+		// g.drawImage(whitePawn8, gridSpace*8-gridSpace/2, gridSpace*7-gridSpace/2, gridSpace, gridSpace, null);
 
 		//testing numbers and letters:
 		g.setColor(Color.BLACK);
