@@ -26,6 +26,7 @@ public class Chess{
 	private Piece[][] board;
 	public Chess()
 	{
+		board = new Piece[8][8];
 		try {
 			blackRook = ImageIO.read(new File("blackRook.png"));
 			blackKnight = ImageIO.read(new File("blackKnight.png"));
@@ -45,56 +46,57 @@ public class Chess{
 		}
 	}
 	//methods
-	public void reset()//set up the board
+	public void reset()
 	{
 		for (int i = 0; i < 8; i++)
 		{
+			//System.out.println(i);
 			for (int j = 0; j < 8; j++)
 			{
 				//board[i][j] = new EmptyPiece();
 				board[i][j] = null;
 			}
 		}
-	
+		
 		//set up pieces.
 		//black side
 		final PieceFactory factory = PieceFactory.getFactory();
 		try {
-			board[1][1] = factory.buildPiece(PieceFactory.PieceType.ROOK, BLACK); //must try/catch because if pic doesnt work.
-			board[2][1] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, BLACK);
-			board[3][1] = factory.buildPiece(PieceFactory.PieceType.BISHOP, BLACK);
-			board[4][1] = factory.buildPiece(PieceFactory.PieceType.QUEEN, BLACK);
-			board[5][1] = factory.buildPiece(PieceFactory.PieceType.KING, BLACK);
-			board[6][1] = factory.buildPiece(PieceFactory.PieceType.BISHOP, BLACK);
-			board[7][1] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, BLACK);
-			board[8][1] = factory.buildPiece(PieceFactory.PieceType.ROOK, BLACK);
+			board[0][0] = factory.buildPiece(PieceFactory.PieceType.ROOK, BLACK); //must try/catch because if pic doesnt work.
+			board[1][0] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, BLACK);
+			board[2][0] = factory.buildPiece(PieceFactory.PieceType.BISHOP, BLACK);
+			board[3][0] = factory.buildPiece(PieceFactory.PieceType.QUEEN, BLACK);
+			board[4][0] = factory.buildPiece(PieceFactory.PieceType.KING, BLACK);
+			board[5][0] = factory.buildPiece(PieceFactory.PieceType.BISHOP, BLACK);
+			board[6][0] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, BLACK);
+			board[7][0] = factory.buildPiece(PieceFactory.PieceType.ROOK, BLACK);
 
-			board[1][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK); //must try/catch because if pic doesnt work.
-			board[2][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
-			board[3][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
-			board[4][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
-			board[5][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
-			board[6][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
-			board[7][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
-			board[8][2] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[0][1] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK); //must try/catch because if pic doesnt work.
+			board[1][1] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[2][1] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[3][1] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[4][1] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[5][1] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[6][1] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
+			board[7][1] = factory.buildPiece(PieceFactory.PieceType.PAWN, BLACK);
 
-			board[1][8] = factory.buildPiece(PieceFactory.PieceType.ROOK, WHITE); //must try/catch because if pic doesnt work.
-			board[2][8] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, WHITE);
-			board[3][8] = factory.buildPiece(PieceFactory.PieceType.BISHOP, WHITE);
-			board[4][8] = factory.buildPiece(PieceFactory.PieceType.QUEEN, WHITE);
-			board[5][8] = factory.buildPiece(PieceFactory.PieceType.KING, WHITE);
-			board[6][8] = factory.buildPiece(PieceFactory.PieceType.BISHOP, WHITE);
-			board[7][8] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, WHITE);
-			board[8][8] = factory.buildPiece(PieceFactory.PieceType.ROOK, WHITE);
+			board[0][7] = factory.buildPiece(PieceFactory.PieceType.ROOK, WHITE); //must try/catch because if pic doesnt work.
+			board[1][7] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, WHITE);
+			board[2][7] = factory.buildPiece(PieceFactory.PieceType.BISHOP, WHITE);
+			board[3][7] = factory.buildPiece(PieceFactory.PieceType.QUEEN, WHITE);
+			board[4][7] = factory.buildPiece(PieceFactory.PieceType.KING, WHITE);
+			board[5][7] = factory.buildPiece(PieceFactory.PieceType.BISHOP, WHITE);
+			board[6][7] = factory.buildPiece(PieceFactory.PieceType.KNIGHT, WHITE);
+			board[7][7] = factory.buildPiece(PieceFactory.PieceType.ROOK, WHITE);
 
-			board[1][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE); //must try/catch because if pic doesnt work.
-			board[2][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
-			board[3][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
-			board[4][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
-			board[5][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
-			board[6][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
-			board[7][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
-			board[8][7] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[0][6] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE); //must try/catch because if pic doesnt work.
+			board[1][6] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[2][6] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[3][6] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[4][6] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[5][6] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[6][6] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
+			board[7][6] = factory.buildPiece(PieceFactory.PieceType.PAWN, WHITE);
 
 			
 		} catch (Exception e) {
@@ -113,4 +115,12 @@ public class Chess{
 		// 1 (1,8), (2,8), (3,8), (4,8), (5,8), (6,8), (7,8), (8,8)
 		//     A      B      C      D      E      F      G      H 
 	}
+
+	public Piece[][] getBoard()
+	{
+		return this.board;
+	}
+
+
+
 }
