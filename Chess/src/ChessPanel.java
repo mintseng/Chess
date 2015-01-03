@@ -18,6 +18,9 @@ public class ChessPanel extends JPanel implements MouseListener{
 	int height = 702+44;
 	int gridSpace;
 	private Piece[][] board;
+	boolean selected = false;
+	String piece;
+	int[] pos = new int[2];
 
 	public ChessPanel()
 	{
@@ -123,11 +126,33 @@ public class ChessPanel extends JPanel implements MouseListener{
 
 		if (x > gridSpace/2 && x < 17*gridSpace/2 && y > gridSpace/2 && y < 17*gridSpace/2)
 		{
-			board[2][2] = board[2][1];
-			board[2][1] = null;
-			if (board[row][col] != null)
-				System.out.println(board[row][col].getClass().getName());
+			System.out.println(selected);	
+			if (this.selected)
+			{
+				if (piece == "Pawn")
+				{
+					board[pos[0]][pos[1]+1] = board[pos[0]][pos[1]];
+					board[pos[0]][pos[1]] = null;
+				}
+				this.selected = !this.selected;
+			}
+			else
+			{
+				if (board[row][col] != null)
+				{
+					this.piece = board[row][col].getClass().getName();
+					pos[0] = row;
+					pos[1] = col;
+					System.out.println(row);
+					System.out.println(col);
+					System.out.println(piece);
+					
+				}
+				this.selected = !selected;
+				
+			}
 			repaint();
+
 		}
 
 		// System.out.println("x is " + e.getX());
