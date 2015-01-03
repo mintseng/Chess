@@ -133,6 +133,7 @@ public class ChessPanel extends JPanel implements MouseListener{
 				{
 					board[pos[0]][pos[1]+1] = board[pos[0]][pos[1]];
 					board[pos[0]][pos[1]] = null;
+					this.piece = null;
 				}
 				this.selected = !this.selected;
 			}
