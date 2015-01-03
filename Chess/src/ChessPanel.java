@@ -115,46 +115,60 @@ public class ChessPanel extends JPanel implements MouseListener{
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
+
 		int x = e.getX();
 		int y = e.getY();
-		System.out.println("x is " + e.getX());
-		System.out.println("y is " + e.getY());
-		if (x < gridSpace/2)
+		int row = (x-gridSpace/2)/gridSpace;
+		int col = (y-gridSpace/2)/gridSpace;
+
+		if (x > gridSpace/2 && x < 17*gridSpace/2 && y > gridSpace/2 && y < 17*gridSpace/2)
 		{
-			System.out.println("0");
+			board[2][2] = board[2][1];
+			board[2][1] = null;
+			if (board[row][col] != null)
+				System.out.println(board[row][col].getClass().getName());
+			repaint();
 		}
-		else if (x < gridSpace/2 + gridSpace)
-		{
-			System.out.println("1");
-		}
-		else if (x < gridSpace/2 + gridSpace*2)
-		{
-			System.out.println("2");
-		}
-		else if (x < gridSpace/2 + gridSpace*3)
-		{
-			System.out.println("3");
-		}
-		else if (x < gridSpace/2 + gridSpace*4)
-		{
-			System.out.println("4");
-		}
-		else if (x < gridSpace/2 + gridSpace*5)
-		{
-			System.out.println("5");
-		}
-		else if (x < gridSpace/2 + gridSpace*6)
-		{
-			System.out.println("6");
-		}
-		else if (x < gridSpace/2 + gridSpace*7)
-		{
-			System.out.println("7");
-		}
-		else if (x < gridSpace/2 + gridSpace*8)
-		{
-			System.out.println("8");
-		}
+
+		// System.out.println("x is " + e.getX());
+		// System.out.println("y is " + e.getY());
+
+		// if (x < gridSpace/2)
+		// {
+		// 	System.out.println("0");
+		// }
+		// else if (x < gridSpace/2 + gridSpace)
+		// {
+		// 	System.out.println("1");
+		// }
+		// else if (x < gridSpace/2 + gridSpace*2)
+		// {
+		// 	System.out.println("2");
+		// }
+		// else if (x < gridSpace/2 + gridSpace*3)
+		// {
+		// 	System.out.println("3");
+		// }
+		// else if (x < gridSpace/2 + gridSpace*4)
+		// {
+		// 	System.out.println("4");
+		// }
+		// else if (x < gridSpace/2 + gridSpace*5)
+		// {
+		// 	System.out.println("5");
+		// }
+		// else if (x < gridSpace/2 + gridSpace*6)
+		// {
+		// 	System.out.println("6");
+		// }
+		// else if (x < gridSpace/2 + gridSpace*7)
+		// {
+		// 	System.out.println("7");
+		// }
+		// else if (x < gridSpace/2 + gridSpace*8)
+		// {
+		// 	System.out.println("8");
+		// }
 	}
 	@Override
 	public void mouseEntered(MouseEvent arg0) {
