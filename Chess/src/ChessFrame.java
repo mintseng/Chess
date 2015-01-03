@@ -34,6 +34,19 @@ public class ChessFrame extends JFrame {
 		panel.setBoard(chess.getBoard());
 		game.add(panel);
 	    game.setVisible(true);
+
+	    // 1/3/15 3:02 it is late af
+
+	    // example for iterating a 2d array for-each
+	    // int x[][] = new int[2][2];
+	    // x[0][0] = 1;
+	    // x[0][1] = 2;
+	    // x[1][0] = 3;
+	    // x[1][1] = 4;
+
+	    // for (int[] list: x)
+	    // 	for (int num: list)
+	    // 		System.out.println(num);
 		
 		
 		
