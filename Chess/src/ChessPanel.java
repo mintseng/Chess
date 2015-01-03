@@ -61,7 +61,16 @@ public class ChessPanel extends JPanel implements MouseListener{
 		//this image is at 3, 3
 		//g.drawImage(blackRook, gridSpace*3-gridSpace/2, gridSpace*3-gridSpace/2, gridSpace, gridSpace, null);
 
-		
+		// for (Piece[] row: board)
+		// 	for (Piece piece: row)
+		// 		if (piece != null)
+		// 			System.out.println(piece);
+
+		for (int i = 0; i < 8; i++)
+			for (int j = 0; j < 8; j++)
+				if (board[i][j] != null)
+					g.drawImage(board[i][j].getImage(), gridSpace*(i+1)-gridSpace/2, gridSpace*(j+1)-gridSpace/2, gridSpace, gridSpace, null);
+
 
 		//testing numbers and letters:
 		g.setColor(Color.BLACK);
